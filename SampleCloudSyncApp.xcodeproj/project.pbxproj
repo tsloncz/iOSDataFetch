@@ -1,0 +1,466 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		22D7120F21BC28FF0037A8AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D7120E21BC28FF0037A8AF /* AppDelegate.swift */; };
+		22D7121121BC28FF0037A8AF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D7121021BC28FF0037A8AF /* ViewController.swift */; };
+		22D7121421BC28FF0037A8AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22D7121221BC28FF0037A8AF /* Main.storyboard */; };
+		22D7121621BC29010037A8AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22D7121521BC29010037A8AF /* Assets.xcassets */; };
+		22D7121921BC29010037A8AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22D7121721BC29010037A8AF /* LaunchScreen.storyboard */; };
+		22D7122421BC29010037A8AF /* SampleCloudSyncAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D7122321BC29010037A8AF /* SampleCloudSyncAppTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		22D7122021BC29010037A8AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 22D7120321BC28FF0037A8AF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 22D7120A21BC28FF0037A8AF;
+			remoteInfo = SampleCloudSyncApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		22D7120B21BC28FF0037A8AF /* SampleCloudSyncApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleCloudSyncApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		22D7120E21BC28FF0037A8AF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		22D7121021BC28FF0037A8AF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		22D7121321BC28FF0037A8AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		22D7121521BC29010037A8AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		22D7121821BC29010037A8AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		22D7121A21BC29010037A8AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22D7121F21BC29010037A8AF /* SampleCloudSyncAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleCloudSyncAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		22D7122321BC29010037A8AF /* SampleCloudSyncAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleCloudSyncAppTests.swift; sourceTree = "<group>"; };
+		22D7122521BC29010037A8AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		22D7120821BC28FF0037A8AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22D7121C21BC29010037A8AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		22D7120221BC28FF0037A8AF = {
+			isa = PBXGroup;
+			children = (
+				22D7120D21BC28FF0037A8AF /* SampleCloudSyncApp */,
+				22D7122221BC29010037A8AF /* SampleCloudSyncAppTests */,
+				22D7120C21BC28FF0037A8AF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		22D7120C21BC28FF0037A8AF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				22D7120B21BC28FF0037A8AF /* SampleCloudSyncApp.app */,
+				22D7121F21BC29010037A8AF /* SampleCloudSyncAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		22D7120D21BC28FF0037A8AF /* SampleCloudSyncApp */ = {
+			isa = PBXGroup;
+			children = (
+				22D7120E21BC28FF0037A8AF /* AppDelegate.swift */,
+				22D7121021BC28FF0037A8AF /* ViewController.swift */,
+				22D7121221BC28FF0037A8AF /* Main.storyboard */,
+				22D7121521BC29010037A8AF /* Assets.xcassets */,
+				22D7121721BC29010037A8AF /* LaunchScreen.storyboard */,
+				22D7121A21BC29010037A8AF /* Info.plist */,
+			);
+			path = SampleCloudSyncApp;
+			sourceTree = "<group>";
+		};
+		22D7122221BC29010037A8AF /* SampleCloudSyncAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				22D7122321BC29010037A8AF /* SampleCloudSyncAppTests.swift */,
+				22D7122521BC29010037A8AF /* Info.plist */,
+			);
+			path = SampleCloudSyncAppTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		22D7120A21BC28FF0037A8AF /* SampleCloudSyncApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22D7122821BC29010037A8AF /* Build configuration list for PBXNativeTarget "SampleCloudSyncApp" */;
+			buildPhases = (
+				22D7120721BC28FF0037A8AF /* Sources */,
+				22D7120821BC28FF0037A8AF /* Frameworks */,
+				22D7120921BC28FF0037A8AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SampleCloudSyncApp;
+			productName = SampleCloudSyncApp;
+			productReference = 22D7120B21BC28FF0037A8AF /* SampleCloudSyncApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		22D7121E21BC29010037A8AF /* SampleCloudSyncAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22D7122B21BC29010037A8AF /* Build configuration list for PBXNativeTarget "SampleCloudSyncAppTests" */;
+			buildPhases = (
+				22D7121B21BC29010037A8AF /* Sources */,
+				22D7121C21BC29010037A8AF /* Frameworks */,
+				22D7121D21BC29010037A8AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				22D7122121BC29010037A8AF /* PBXTargetDependency */,
+			);
+			name = SampleCloudSyncAppTests;
+			productName = SampleCloudSyncAppTests;
+			productReference = 22D7121F21BC29010037A8AF /* SampleCloudSyncAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		22D7120321BC28FF0037A8AF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = LyttleBit;
+				TargetAttributes = {
+					22D7120A21BC28FF0037A8AF = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					22D7121E21BC29010037A8AF = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 22D7120A21BC28FF0037A8AF;
+					};
+				};
+			};
+			buildConfigurationList = 22D7120621BC28FF0037A8AF /* Build configuration list for PBXProject "SampleCloudSyncApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 22D7120221BC28FF0037A8AF;
+			productRefGroup = 22D7120C21BC28FF0037A8AF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				22D7120A21BC28FF0037A8AF /* SampleCloudSyncApp */,
+				22D7121E21BC29010037A8AF /* SampleCloudSyncAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		22D7120921BC28FF0037A8AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22D7121921BC29010037A8AF /* LaunchScreen.storyboard in Resources */,
+				22D7121621BC29010037A8AF /* Assets.xcassets in Resources */,
+				22D7121421BC28FF0037A8AF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22D7121D21BC29010037A8AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		22D7120721BC28FF0037A8AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22D7121121BC28FF0037A8AF /* ViewController.swift in Sources */,
+				22D7120F21BC28FF0037A8AF /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22D7121B21BC29010037A8AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22D7122421BC29010037A8AF /* SampleCloudSyncAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		22D7122121BC29010037A8AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 22D7120A21BC28FF0037A8AF /* SampleCloudSyncApp */;
+			targetProxy = 22D7122021BC29010037A8AF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		22D7121221BC28FF0037A8AF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				22D7121321BC28FF0037A8AF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		22D7121721BC29010037A8AF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				22D7121821BC29010037A8AF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		22D7122621BC29010037A8AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		22D7122721BC29010037A8AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		22D7122921BC29010037A8AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SampleCloudSyncApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lyttleBit.SampleCloudSyncApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		22D7122A21BC29010037A8AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SampleCloudSyncApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lyttleBit.SampleCloudSyncApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		22D7122C21BC29010037A8AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SampleCloudSyncAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lyttleBit.SampleCloudSyncAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SampleCloudSyncApp.app/SampleCloudSyncApp";
+			};
+			name = Debug;
+		};
+		22D7122D21BC29010037A8AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SampleCloudSyncAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lyttleBit.SampleCloudSyncAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SampleCloudSyncApp.app/SampleCloudSyncApp";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		22D7120621BC28FF0037A8AF /* Build configuration list for PBXProject "SampleCloudSyncApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22D7122621BC29010037A8AF /* Debug */,
+				22D7122721BC29010037A8AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22D7122821BC29010037A8AF /* Build configuration list for PBXNativeTarget "SampleCloudSyncApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22D7122921BC29010037A8AF /* Debug */,
+				22D7122A21BC29010037A8AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22D7122B21BC29010037A8AF /* Build configuration list for PBXNativeTarget "SampleCloudSyncAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22D7122C21BC29010037A8AF /* Debug */,
+				22D7122D21BC29010037A8AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 22D7120321BC28FF0037A8AF /* Project object */;
+}
