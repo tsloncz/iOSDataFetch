@@ -15,8 +15,7 @@ struct QAndAItem: Codable {
 }
 
 protocol QandADataService {
-    var data: [QAndAItem] { get }
-    var onUpdate: (() -> Void)? { get set }
+    func fetch(onComplete:  @escaping ([QAndAItem]) -> Void)
 }
 
 final class QAndAModel {
@@ -24,21 +23,31 @@ final class QAndAModel {
     var dataService: QandADataService
     var filteredData = [QAndAItem]()
     var onUpdate: (()->Void)? = nil
+    private var filterActive = false
     
     init() {
         // Create data
         dataService = QAndAAPIService()// MockData()
-        dataService.onUpdate = {
-            self.data = self.dataService.data
+ 
+        dataService.fetch { (items) in
+            self.data = items
             self.filteredData = self.data
             self.onUpdate?()
         }
-        data = dataService.data
-        filteredData = data
     }
     
     var numberOfQuestions: Int {
         return filteredData.count
+    }
+    
+    func fetchData(completion: @escaping () -> Void) {
+        dataService.fetch { (items) in
+            self.data = items
+            if !self.filterActive {
+                self.filteredData = items
+            }
+            completion()
+        }
     }
     
     func listenForUpdatesUsing(completion: @escaping ()->Void) {
@@ -58,15 +67,19 @@ final class QAndAModel {
     /// - Parameter filter: the text to filter questions
     func questionsUsing(filter: String, completion: () -> Void) {
         guard filter != "" else {
+            filterActive = false
             self.filteredData = data
             completion()
             return
         }
+        filterActive = true
         filteredData = []
         for item in data {
-            if item.question.contains(filter) {
+            if item.question.range(of: filter, options: .caseInsensitive, range: nil, locale: nil) != nil {
                 filteredData.append(item)
             }
+//            if item.question.contains(filter) {
+//            }
         }
         completion()
     }

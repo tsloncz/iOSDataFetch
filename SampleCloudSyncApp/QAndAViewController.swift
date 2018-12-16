@@ -13,22 +13,37 @@ class QAndAViewController: UIViewController {
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var tableView: UITableView!
     
-    let model = QAndAModel()
+    private let model = QAndAModel()
+    private let refreshControl = UIRefreshControl()
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
         searchBar.delegate = self
-        tableView.estimatedRowHeight = 70
-        tableView.rowHeight = UITableView.automaticDimension
         
         model.listenForUpdatesUsing {
             DispatchQueue.main.async {
                 self.tableView.reloadData()
             }
         }
+        self.configureRefresh()
     }
     
+    private func configureRefresh() {
+        tableView.refreshControl = refreshControl
+        refreshControl.addTarget(self, action: #selector(refreshData(_:)), for: .valueChanged)
 
+    }
+
+    @objc private func refreshData(_ sender: Any) {
+        DispatchQueue.main.async {
+            self.model.fetchData {
+                self.tableView.reloadData()
+                self.refreshControl.endRefreshing()
+            }
+        }
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let vc = segue.destination as? QandADetailViewController,
             let cell = sender as? UITableViewCell,
@@ -53,8 +68,6 @@ extension QAndAViewController: UITableViewDataSource {
         cell.setQuestion(to: model.questionNumber(indexPath.row))
         return cell
     }
-    
-    
 }
 
 extension QAndAViewController: UITableViewDelegate {
@@ -72,4 +85,6 @@ extension QAndAViewController: UISearchBarDelegate {
             }
         }
     }
+    
+    
 }

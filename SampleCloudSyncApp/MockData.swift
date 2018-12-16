@@ -9,9 +9,7 @@
 import Foundation
 
 final class MockData: QandADataService {
-    var onUpdate: (() -> Void)?
-    
-    var data: [QAndAItem] {
+    func fetch(onComplete: ([QAndAItem]) -> Void) {
         var response = [QAndAItem]()
         for item in rawQAndA {
             guard let q = item["question"] as? String,
@@ -21,7 +19,7 @@ final class MockData: QandADataService {
             let item = QAndAItem(question: q, response: a)
             response.append(item)
         }
-        return response
+        onComplete(response)
     }
     
     private var rawQAndA = [

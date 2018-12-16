@@ -10,22 +10,18 @@ import Foundation
 import Alamofire
 
 class QAndAAPIService: QandADataService {
-    var data = [QAndAItem]()
-    var onUpdate: (() -> Void)? = nil
     
-    init() {
-        print(AlamofireVersionNumber)
+    func fetch(onComplete: @escaping ([QAndAItem])->Void) {
         Alamofire.request("").responseJSON { (response) in
-
+            
             let decoder = JSONDecoder()
             do {
                 let items = try decoder.decode([QAndAItem].self, from: response.data!)
-                self.data = items
-                self.onUpdate?()
+                onComplete(items)
             } catch {
                 print(error)
+                onComplete([])
             }
         }
-        
     }
 }
